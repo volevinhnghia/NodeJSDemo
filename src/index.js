@@ -10,9 +10,9 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
 app.use('/v1/', bookRouter);
-app.use('/v2/', productRouter);
-app.use('/v2/', categoriesRouter);
-app.use('/v2/', usersRouter);
+app.use('/v1/', productRouter);
+app.use('/v1/', categoriesRouter);
+app.use('/v1/', usersRouter);
 
 
 app.get('/message/:mgs', (req, res) => {
